@@ -1,19 +1,23 @@
 from . import elements
 
+
 def healing_potion() -> str:
     fire_element: str = elements.create_fire()
     water_element: str = elements.create_water()
     return f"Healing potion brewed with {fire_element} and {water_element}"
+
 
 def strength_potion() -> str:
     earth_element: str = elements.create_earth()
     fire_element: str = elements.create_fire()
     return f"Strength potion brewed with {earth_element} and {fire_element}"
 
+
 def invisibility_potion() -> str:
     air_element: str = elements.create_air()
     water_element: str = elements.create_water()
     return f"Invisibility potion brewed with {air_element} and {water_element}"
+
 
 def wisdom_potion() -> str:
     all_four_elements: str = ""

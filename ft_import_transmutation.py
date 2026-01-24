@@ -18,7 +18,7 @@ def main() -> None:
     print()
     print("Method 2 - Specific function import:")
     print(f"create_water(): {create_water()}")
-    
+
     print()
     print("Method 3 - Aliased import:")
     print(f"heal(): {heal()}")
@@ -28,9 +28,10 @@ def main() -> None:
     print(f"create_earth(): {create_earth()}")
     print(f"create_fire(): {create_fire()}")
     print(f"strength_potion(): {strength_potion()}")
-    
+
     print()
     print("All import transmutation methods mastered!")
+
 
 if __name__ == "__main__":
     main()

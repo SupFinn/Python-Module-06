@@ -1,5 +1,6 @@
 import alchemy
 
+
 def main() -> None:
     print()
     print("=== Sacred Scroll Mastery ===")
@@ -28,17 +29,15 @@ def main() -> None:
     water_element: str = alchemy.create_water()
     print(f"alchemy.elements.create_water(): {water_element}")
 
-
     try:
         earth_element: str = alchemy.create_earth()
     except AttributeError:
         earth_element: str = "AttributeError - not exposed"
     print(f"alchemy.create_earth() {earth_element}")
 
-
     try:
         air_element: str = alchemy.create_air()
-    except:
+    except AttributeError:
         air_element: str = "AttributeError - not exposed"
     print(f"alchemy.create_air() {earth_element}")
 
